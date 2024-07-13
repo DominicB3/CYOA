@@ -1,0 +1,102 @@
+/* When someone enters your game, you only want them to see the opening and the option buttons. */
+.option-one-screen, 
+.option-two-screen, 
+.look-around-screen,
+.forest-screen,
+.fire-screen,
+.continue-further-screen,
+.turn-back-screen {
+   display: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: cursive;
+    color: hsla(0, 0%, 100%, 0.55);
+}
+
+div {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    border-radius: 35%;
+    box-shadow: 0px 0px 25px black;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+h1.vertical-shake {
+    animation: vertical-shaking 0.35s infinite;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/openYourEyes.gif);
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+@keyframes vertical-shaking {
+    0% { transform: translateY(0) };
+    25% { transform: translateY(5px) };
+    50% { transform: translateY(-5px) };
+    75% { transform: translateY(5px) };
+    100% { transform: translateY(0) };
+    0% { transform: translateX(0) };
+    25% { transform: translateX(5px) };
+    50% { transform: translateX(-5px) };
+    75% { transform: translateX(5px) };
+    100% { transform: translateX(0) };
+  }
+
+  button {
+    color: hsla(0, 0%, 100%, 0.55);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 35%;
+    box-shadow: 0px 0px 25px black;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #f74e1b;
+}
+
+
+  .container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 35%;
+    box-shadow: 0px 0px 25px black;
+}
+
+.buttons {
+    margin: 20px;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border-radius: 2rem;
+}
+
+.story-font {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: medium;
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+.them {
+    font-size: xx-large;
+    font-style: oblique;
+    color: red;
+}
+
+em {
+    font-style: oblique;
+    color: red;
+}
